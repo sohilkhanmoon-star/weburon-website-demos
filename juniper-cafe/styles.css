@@ -6,3 +6,4 @@
 /* Keep photo-based grids within the viewport */
 .hero-grid>*,.feature-grid>*{min-width:0}.hero-visual,.feature-art{width:100%;max-width:100%}.hero-photo,.feature-photo{max-width:100%}
 .product-visual img[src$="espresso.webp"],.product-visual img[src$="latte.webp"]{object-position:center 78%}
+.hero-visual,.feature-art,.product-visual{position:relative;display:block}.hero-photo,.feature-photo,.product-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
