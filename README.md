@@ -1,6 +1,6 @@
 # Weburon website demos
 
-A separate home for Weburon sample websites. Each website lives in its own folder so future client demos stay organized.
+A home for Weburon sample websites and client projects. Each website lives in its own folder.
 
 | Website | Folder | Preview |
 | --- | --- | --- |
@@ -8,12 +8,18 @@ A separate home for Weburon sample websites. Each website lives in its own folde
 | Café & kitchen | `juniper-cafe/` | Open `juniper-cafe/index.html` |
 | Travel agency | `northstar-travel/` | Open `northstar-travel/index.html` |
 
+## Client websites
+
+| Website | Folder | Preview |
+| --- | --- | --- |
+| Pahado by Shahji | `client/pahado-by-shahji/` | Open `client/pahado-by-shahji/index.html` |
+
 ## Local preview
 
-Open `index.html` directly in a browser. Each demo can also be opened from its own folder.
+Open `index.html` directly in a browser. Each website can also be opened from its own folder.
 
 ## GitHub Pages
 
-The repository publishes from `main` and `/ (root)`. The main page lists the demos; individual sites are at `/medical-clinic/`, `/juniper-cafe/`, and `/northstar-travel/`.
+The repository publishes from `main` and `/ (root)`. The main page lists the demos; individual sites are at `/medical-clinic/`, `/juniper-cafe/`, `/northstar-travel/`, and `/client/pahado-by-shahji/`.
 
-These are samples with fictional details and local-browser demo forms. Read each site's README before adapting it for a real business.
+The demo folders contain fictional details and local-browser forms. The client folder contains a real business website; its introductory prices and availability should be confirmed with the business before ordering.
