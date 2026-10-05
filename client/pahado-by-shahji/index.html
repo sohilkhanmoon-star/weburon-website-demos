@@ -63,6 +63,127 @@
 @media(max-width:750px){
  .hero-visual .hero-photo{opacity:.88;mask-image:linear-gradient(to bottom,transparent 0%,#000 23%,#000 94%,transparent 100%)}
 }
+/* Storefront preview features, adapted to the Pahado catalogue. */
+.delivery-strip{height:34px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#9ca64b;color:#18392c;font-size:11px;font-weight:700;letter-spacing:.04em}
+.delivery-strip button{border:0;background:none;color:inherit;font-size:11px;font-weight:800;padding:6px 0;text-align:left}
+.delivery-strip button span{margin-left:8px}
+.delivery-strip>span{font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.saved-header{font-size:24px;line-height:1;white-space:nowrap;display:inline-flex;align-items:center;gap:3px}
+.saved-header span{font:700 11px 'DM Sans',sans-serif}
+.flavour-nav{min-height:43px;padding:0 5%;display:flex;align-items:center;justify-content:center;gap:clamp(18px,4vw,60px);background:#faf7ef;border-bottom:1px solid #ddd9ca;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.flavour-nav a:hover,.desktop-nav a:hover{color:#a05c3b}
+.flavour-nav a:last-child{color:#a05c3b}
+.header{top:0}
+.hero-controls{position:absolute;z-index:4;left:9%;bottom:32px;display:flex;align-items:center;gap:11px}
+.hero-controls button{border:0;color:#fff;background:transparent;display:grid;place-items:center;padding:0}
+.hero-controls button:first-child,.hero-controls button:last-child{height:34px;width:34px;border:1px solid #ffffff80;border-radius:50%;font-size:23px;line-height:1}
+.hero-controls button:nth-child(2),.hero-controls button:nth-child(3){width:8px;height:8px;border-radius:50%;background:#ffffff80}
+.hero-controls button.current{width:23px;border-radius:10px;background:#f5d6a8}
+.hero-promo .hero-content{max-width:800px}
+.hero-promo h1{font-size:clamp(58px,7vw,108px)}
+.flavour-section{background:#f7f3e9}
+.flavour-section .section-head .text-link{align-self:center}
+.flavour-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.flavour-tile{position:relative;min-width:0;background:#253d30;color:#fff;overflow:hidden}
+.flavour-tile img{width:100%;height:360px;object-fit:contain;transition:transform .35s ease}
+.flavour-tile:hover img{transform:scale(1.035)}
+.flavour-tile>div{padding:23px 26px;background:#244737;min-height:154px}
+.flavour-tile .eyebrow{color:#e9bd88}
+.flavour-tile h3{font-size:31px;line-height:1.08;margin:10px 0}
+.flavour-tile>div>span:last-child{font-size:10px;text-transform:uppercase;font-weight:700;letter-spacing:.13em}
+.deal-highlights{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:20px;align-items:stretch;background:#e6dfcd}
+.deal-highlights h2{font-size:clamp(42px,4vw,60px);line-height:1.07;margin:16px 0}
+.deal-highlights p{font-size:14px;line-height:1.7;color:#637064;max-width:270px}
+.deal-highlights>a{display:flex;flex-direction:column;min-height:250px;padding:30px;background:#f9f4e8;border:1px solid #d2cebd}
+.deal-highlights>a:nth-of-type(2){background:#d9e0cf}
+.deal-highlights>a>span{font-size:10px;font-weight:700;letter-spacing:.16em;color:#a05c3b}
+.deal-highlights strong{font:500 35px Fraunces,Georgia,serif;line-height:1.1;margin:35px 0 7px}
+.deal-highlights small{color:#657166;line-height:1.5}
+.deal-highlights b{font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:auto;padding-top:25px}
+.product-card{position:relative}
+.save-button{position:absolute;top:20px;right:20px;z-index:2;display:grid;place-items:center;width:35px;height:35px;border:1px solid #d5d8c9;border-radius:50%;background:#fbf7ed;color:#203b31;font-size:23px;line-height:1}
+.save-button.is-saved{color:#a05c3b}
+.card-offer-badge{position:absolute;top:20px;left:20px;z-index:2;padding:8px 9px;background:#e8d4ad;color:#244130;font-size:8px;font-weight:800;letter-spacing:.09em}
+.shop-intro-bar{display:flex;justify-content:space-between;gap:25px;padding-bottom:20px;margin-bottom:28px;border-bottom:1px solid #cbd1c4;font-size:12px}
+.shop-intro-bar span{color:#667367}
+.shop-section .shop-tools{align-items:center}
+.shop-section .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.shop-section .product-image{height:360px}
+.saved-section{min-height:360px}
+.jar-options{border:0;padding:0;margin:25px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.jar-options legend{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+.jar-option{position:relative;cursor:pointer}
+.jar-option input{position:absolute;opacity:0}
+.jar-option span{display:block;border:1px solid #b8c5b7;padding:13px 14px;min-height:76px;background:#fbf8f0}
+.jar-option input:checked+span{border:2px solid #204537;background:#e8eee2;padding:12px 13px}
+.jar-option input:focus-visible+span{outline:3px solid #a0aa54}
+.jar-option strong,.jar-option small{display:block}
+.jar-option strong{font-size:12px}
+.jar-option small{margin-top:6px;color:#667466}
+.variant-note{font-size:11px!important;line-height:1.5!important;margin:10px 0 0}
+.newsletter-section{display:grid;grid-template-columns:1fr 1fr;gap:7%;padding:85px 8%;background:#d9e2d0;color:#203b31;align-items:center}
+.newsletter-section h2{font-size:clamp(42px,4vw,62px);line-height:1.05;margin:17px 0}
+.newsletter-section p{color:#536654;line-height:1.6;margin:0}
+.newsletter-section form label{display:block;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;margin-bottom:10px}
+.newsletter-section form>div{display:flex}
+.newsletter-section input{width:100%;min-width:0;background:#faf8ef;border:1px solid #a7b9a3;border-right:0;padding:16px;color:#203b31}
+.newsletter-section button{border:0;background:#214638;color:#fff;padding:0 20px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.newsletter-section small{display:block;margin-top:10px;color:#5c6c5b}
+.newsletter-section form p{margin-top:12px;font-weight:700}
+.floating-whatsapp{position:fixed;z-index:9;bottom:24px;right:24px;display:flex;align-items:center;gap:8px;background:#216346;color:#fff;padding:12px 18px;border-radius:40px;box-shadow:0 7px 25px #061b1640;font-size:13px;font-weight:800}
+.floating-whatsapp:first-letter{font-size:20px}
+.feature-scrim{position:fixed;inset:0;background:#061b16a8;z-index:50}
+.location-panel{position:fixed;z-index:51;top:50%;left:50%;transform:translate(-50%,-50%);width:min(500px,calc(100% - 30px));background:#fcf9f1;color:#203b31;padding:38px;box-shadow:0 18px 50px #061b1644}
+.panel-close{position:absolute;right:20px;top:15px;border:0;background:none;font-size:28px;color:#203b31}
+.location-panel h2{font-size:43px;line-height:1.1;margin:16px 0}
+.location-panel p{color:#617162;line-height:1.6}
+.location-panel label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.location-panel form>div{display:flex;margin-top:9px}
+.location-panel input{min-width:0;width:100%;border:1px solid #aebbad;padding:14px;background:#fff}
+.location-panel form button{border:0;background:#214638;color:#fff;padding:0 23px;font-weight:800}
+.location-panel .location-note{background:#e4eddf;padding:12px 15px;color:#254a35;margin:18px 0 0}
+@media(max-width:1100px){
+ .flavour-nav{gap:18px;font-size:10px}
+ .flavour-tile img{height:300px}
+ .deal-highlights{grid-template-columns:1fr 1fr}
+ .deal-highlights>div:first-child{grid-column:1/-1}
+ .shop-section .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:750px){
+ .delivery-strip>span{display:none}
+ .delivery-strip{justify-content:center}
+ .topbar{height:28px}
+ .flavour-nav{justify-content:flex-start;overflow-x:auto;white-space:nowrap;padding:0 5%}
+ .nav-actions>.icon-button:first-child{display:block}
+ .saved-header{font-size:21px}
+ .flavour-tiles{grid-template-columns:1fr 1fr}
+ .flavour-tile img{height:250px}
+ .flavour-tile h3{font-size:27px}
+ .newsletter-section{grid-template-columns:1fr;gap:30px;padding:65px 6%}
+ .hero-controls{left:7%;bottom:16px}
+}
+@media(max-width:500px){
+ .delivery-strip{height:32px}
+ .nav-actions{gap:8px}
+ .nav-actions>.icon-button:first-child{font-size:20px}
+ .saved-header{font-size:19px}
+ .flavour-tiles,.deal-highlights{grid-template-columns:1fr}
+ .flavour-tile img{height:300px}
+ .deal-highlights>div:first-child{grid-column:auto}
+ .deal-highlights>a{min-height:205px}
+ .shop-section .product-grid{grid-template-columns:1fr}
+ .shop-section .product-image{height:330px}
+ .shop-intro-bar{display:block}
+ .shop-intro-bar span{display:block;margin-top:8px}
+ .jar-options{grid-template-columns:1fr}
+ .newsletter-section form>div{display:block}
+ .newsletter-section input{border-right:1px solid #a7b9a3}
+ .newsletter-section button{width:100%;padding:15px}
+ .floating-whatsapp{bottom:14px;right:14px;padding:12px}
+ .floating-whatsapp span{display:none}
+}
+.flavour-nav{scrollbar-width:none}
+.flavour-nav::-webkit-scrollbar{display:none}
 </style><script>const products = [{"slug":"pahadi-mix-namak","name":"Pahadi Mix Namak","category":"Pahadi food enhancers","price":190,"comparePrice":220,"size":"100 g · Cork glass jar","image":"/pahadi-mix-namak.webp","shortDescription":"A blend of Pahadi herbs for everyday meals.","description":"Pahadi Mix Namak features traditional Pahadi herbs including bhang, timur and jakhiya. The catalogue suggests it with fruit, salads, buttermilk, yoghurt and dal rice.","howToUse":"Sprinkle over fruit, salads, buttermilk, yoghurt or dal rice."},{"slug":"bhang-pahadi-namak","name":"Bhang Pahadi Namak","category":"Pahadi food enhancers","price":190,"comparePrice":220,"size":"100 g · Cork glass jar","image":"/bhang-pahadi-namak.webp","shortDescription":"An earthy blend featuring bhang seeds and Pahadi herbs.","description":"The catalogue describes this as a traditional inspired blend of Pahadi herbs, bhang seeds, coriander, salt and timur. It suggests serving it with buttermilk, fruit, salads and everyday meals.","howToUse":"Sprinkle over buttermilk, fruit, salads or everyday meals."},{"slug":"hara-pahadi-namak","name":"Hara Pahadi Namak","category":"Pahadi food enhancers","price":190,"comparePrice":220,"size":"100 g · Cork glass jar","image":"/hara-pahadi-namak.webp","shortDescription":"A green herb blend with coriander, chilli and timur.","description":"The catalogue describes a blend of green coriander, green chilli, timur, rock salt, cumin and traditional Pahadi herbs. It suggests serving it with fruit, salads, snacks, dahi and everyday meals.","howToUse":"Sprinkle over fruit, salads, snacks, dahi or everyday meals."}];
 const PHONE='919005422678';
 const CATALOG='https://wa.me/c/'+PHONE;
@@ -91,10 +212,181 @@ function shop(){const cats=['All',...new Set(products.map(p=>p.category).filter(
 function story(){return `<main><section class="page-hero story-hero"><span class="eyebrow">OUR STORY</span><h1>Thoda Pahad,<br><em>Har Ghar Tak.</em></h1><p>A simple idea: make room for a little mountain flavour at every table.</p></section><section class="story-panel"> <div class="story-scene">${mountainPhoto}</div><div class="story-copy"><span class="eyebrow">MEET PAHADO</span><h2>Mountain feeling.<br>Everyday meals.</h2><p>Pahado by Shahji calls its range “Pahadi Food Enhancer.” Its Instagram shares flavours, work in progress and behind the scenes moments. We’re bringing that same warmth here.</p><a class="button outline" href="${INSTAGRAM}" target="_blank" rel="noopener">See the brand on Instagram ↗</a></div></section><section class="section social"><div><span class="eyebrow">EXPLORE MORE</span><h2>Curious about<br><em>the flavours?</em></h2></div><div><p>Visit the official catalogue for the current range, then message the team directly with your questions.</p><a class="button dark" href="${CATALOG}" target="_blank" rel="noopener">Browse the catalogue ↗</a></div></section></main>`}
 function productPage(slug){const p=products.find(x=>x.slug===slug);if(!p)return `<main class="not-found"><span class="eyebrow">PRODUCT NOT FOUND</span><h1>Let's find your way back.</h1><a class="button dark" href="#/shop">Back to shop</a></main>`;return `<main><div class="breadcrumbs"><a href="#/">Home</a> / <a href="#/shop">Shop</a> / ${esc(p.name)}</div><section class="product-detail"><div class="detail-image">${p.image?`<img src="${esc(asset(p.image))}" alt="Front view of ${esc(p.name)}">`:'<span>Product image coming soon</span>'}<small>Front image preview</small></div><div class="detail-copy"><span class="eyebrow">${esc(p.category||'PAHADO')}</span><h1>${esc(p.name)}</h1>${p.size?`<p class="size">${esc(p.size)}</p>`:''}<p class="price"><span class="sale-price">${money(p.price)}</span> ${p.comparePrice?`<span class="original-price">Was <del>${money(p.comparePrice)}</del></span>`:""}</p>${p.shortDescription?`<p>${esc(p.shortDescription)}</p>`:''}<div class="detail-actions"><label>Quantity <input id="qty" type="number" min="1" max="99" value="1"></label><button class="button dark" data-action="add" data-id="${esc(p.slug)}">Add to bag</button></div><a class="button whatsapp" href="${wa('Hello Pahado by Shahji! I would like to order '+p.name+'.')}" target="_blank" rel="noopener">Enquire on WhatsApp ↗</a><p class="fine">Final price and availability can be confirmed with the Pahado team.</p>${p.description?`<details open><summary>About this product</summary><p>${esc(p.description)}</p></details>`:''}${p.ingredients?`<details><summary>Ingredients</summary><p>${esc(p.ingredients)}</p></details>`:''}${p.origin?`<details><summary>Origin</summary><p>${esc(p.origin)}</p></details>`:''}${p.howToUse?`<details><summary>How to use</summary><p>${esc(p.howToUse)}</p></details>`:''}${p.storage?`<details><summary>Storage</summary><p>${esc(p.storage)}</p></details>`:''}</div></section>${offerSection()}${products.length>1?`<section class="section"><div class="section-head"><h2>You may also like</h2></div><div class="product-grid">${products.filter(x=>x.slug!==p.slug).slice(0,3).map(productCard).join('')}</div></section>`:''}</main>`}
 function cart(){const lines=cartLines();const total=lines.every(x=>typeof x.product.price==='number')?lines.reduce((a,x)=>a+x.product.price*x.qty,0):null;const msg=lines.length?'Hello Pahado by Shahji! I would like to enquire about:\n'+lines.map(x=>`• ${x.product.name}${x.product.size?' ('+x.product.size+')':''} × ${x.qty}`).join('\n'):'Hello Pahado by Shahji! I would like to enquire about your products.';return `<div class="scrim" data-action="close-cart"></div><aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping bag"><div class="drawer-head"><h2>Your bag <span>(${cartCount()})</span></h2><button class="icon-button" data-action="close-cart" aria-label="Close bag">×</button></div>${lines.length?`<div class="cart-lines">${lines.map(({product:p,qty})=>`<div class="cart-line"><div class="cart-thumb">${p.image?`<img src="${esc(asset(p.image))}" alt="">`:'✦'}</div><div><strong>${esc(p.name)}</strong><small>${esc(p.size||'')}</small><span>${money(p.price)}</span><div class="qty-controls"><button data-action="decrease" data-id="${esc(p.slug)}" aria-label="Decrease ${esc(p.name)} quantity">−</button>${qty}<button data-action="increase" data-id="${esc(p.slug)}" aria-label="Increase ${esc(p.name)} quantity">+</button></div></div></div>`).join('')}</div><div class="drawer-bottom">${total!==null?`<div class="subtotal"><span>Estimated subtotal</span><strong>${money(total)}</strong></div>`:''}<p>Confirm prices, availability and delivery directly with the team.</p><a class="button whatsapp" href="${wa(msg)}" target="_blank" rel="noopener">Send enquiry on WhatsApp ↗</a></div>`:`<div class="cart-empty"><div>✦</div><h3>Your bag is waiting.</h3><p>Explore the collection or browse the current products on WhatsApp.</p><a class="button dark" href="#/shop" data-action="close-cart">Explore products</a></div>`}</aside>`}
-function render(){const path=decodeURI(location.hash.slice(1)||'/');const main=path==='/shop'?shop():path==='/story'||path==='/mountains'?story():path.startsWith('/products/')?productPage(path.split('/')[2]):home();app.innerHTML=header()+main+footer()+(state.cartOpen?cart():'');document.body.classList.toggle('drawer-open',state.cartOpen);document.title=(path==='/shop'?'Shop | ':path==='/story'?'Our story | ':path.startsWith('/products/')?((products.find(p=>p.slug===path.split('/')[2])?.name||'Product')+' | '):'')+'Pahado by Shahji';}
+function render(){const path=decodeURI(location.hash.slice(1)||'/');const main=path==='/shop'?featureShop():path==='/saved'?savedPage():path==='/story'||path==='/mountains'?story():path.startsWith('/products/')?featureProductPage(path.split('/')[2]):featureHome();app.innerHTML=featureHeader()+main+featureFooter()+(state.cartOpen?featureCart():'')+featurePanel();document.body.classList.toggle('drawer-open',state.cartOpen||!!featureState.panel);document.title=(path==='/shop'?'Shop | ':path==='/saved'?'Saved | ':path==='/story'?'Our story | ':path.startsWith('/products/')?((products.find(p=>p.slug===path.split('/')[2])?.name||'Product')+' | '):'')+'Pahado by Shahji';}
 window.addEventListener('hashchange',()=>{state.menu=false;state.cartOpen=false;render();window.scrollTo({top:0,behavior:"instant"})});
-document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el)return;const a=el.dataset.action,id=el.dataset.id;if(a==='menu'){state.menu=!state.menu;render()}if(a==='cart'){state.cartOpen=true;render()}if(a==='close-cart'){state.cartOpen=false;render()}if(a==='add'){const qty=Number(document.querySelector('#qty')?.value||1);state.cart[id]=(state.cart[id]||0)+Math.max(1,Math.min(99,qty));persist();state.cartOpen=true;render()}if(a==='increase'||a==='decrease'){state.cart[id]=Math.max(0,(state.cart[id]||0)+(a==='increase'?1:-1));if(!state.cart[id])delete state.cart[id];persist();render()}if(a==='filter'){state.filter=el.dataset.value;render()}if(a==='search'){location.hash='#/shop';setTimeout(()=>document.querySelector('#search')?.focus(),0)}});
+document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el)return;const a=el.dataset.action,id=el.dataset.id;if(a==='menu'){state.menu=!state.menu;render()}if(a==='cart'){state.cartOpen=true;render()}if(a==='close-cart'){state.cartOpen=false;render()}if(a==='add'){const qty=Number(document.querySelector('#qty')?.value||1);state.cart[id]=(state.cart[id]||0)+Math.max(1,Math.min(99,qty));persist();state.cartOpen=true;render()}if(a==='increase'||a==='decrease'){state.cart[id]=Math.max(0,(state.cart[id]||0)+(a==='increase'?1:-1));if(!state.cart[id])delete state.cart[id];persist();render()}if(a==='filter'){state.filter=el.dataset.value;render()}if(a==='search'){location.hash='#/shop';setTimeout(()=>document.querySelector('#feature-search')?.focus(),0)}});
 document.addEventListener('change',e=>{const select=e.target.closest('[data-offer-select]');if(!select)return;const type=select.dataset.offerSelect;const count=Number(select.value);const link=select.closest('.offer-card')?.querySelector('[data-offer-order]');if(link&&OFFER_PACKS[type]?.[count-1])link.href=wa(offerMessage(type,count))});
 document.addEventListener('input',e=>{if(e.target.id==='search'){const position=e.target.selectionStart;state.search=e.target.value;const section=document.querySelector('.shop-section');if(section){const cats=['All',...new Set(products.map(p=>p.category).filter(Boolean))];const q=state.search.trim().toLowerCase();const list=products.filter(p=>(state.filter==='All'||p.category===state.filter)&&(!q||[p.name,p.category,p.description].join(' ').toLowerCase().includes(q)));const grid=section.querySelector('.product-grid,.empty-state');if(grid)grid.outerHTML=list.length?`<div class="product-grid">${list.map(productCard).join('')}</div>`:`<div class="empty-state"><h2>No products found</h2><p>Try another search or category.</p></div>`}}});
+
+// Storefront interactions inspired by the reference site. All commercial actions
+// continue to end with the Pahado team on WhatsApp.
+const featureState={
+  panel:null,
+  pincode:'',
+  deliveryNote:'',
+  flavour:'all',
+  search:'',
+  heroSlide:0,
+  newsletterNote:'',
+  saved:(()=>{try{return JSON.parse(localStorage.getItem('pahado-saved')||'[]')}catch{return []}})()
+};
+const jarPrice={cork:190,normal:170};
+const jarCompare={cork:220,normal:200};
+const jarName={cork:'Cork glass jar',normal:'Normal glass jar'};
+const cartKey=(slug,jar)=>slug+'|'+jar;
+const baseProductCard=productCard;
+productCard=function(p){
+  return baseProductCard(p).replace(
+    '<article class="product-card">',
+    `<article class="product-card"><button class="save-button ${featureState.saved.includes(p.slug)?'is-saved':''}" data-feature="save" data-id="${esc(p.slug)}" aria-label="${featureState.saved.includes(p.slug)?'Remove '+esc(p.name)+' from saved items':'Save '+esc(p.name)}" aria-pressed="${featureState.saved.includes(p.slug)}">${featureState.saved.includes(p.slug)?'♥':'♡'}</button><span class="card-offer-badge">INTRODUCTORY PRICE</span>`
+  );
+};
+function featureCartLines(){
+  return Object.entries(state.cart).map(([key,qty])=>{
+    const [slug,rawJar]=key.split('|');
+    const product=products.find(p=>p.slug===slug);
+    const jar=rawJar==='normal'?'normal':'cork';
+    return {key,product,jar,qty:Number(qty)||0};
+  }).filter(line=>line.product&&line.qty>0);
+}
+function featureCartCount(){return featureCartLines().reduce((sum,line)=>sum+line.qty,0)}
+function featureHeader(){
+  const count=featureState.saved.length;
+  return header()
+    .replace(/(<button class="cart-button"[^>]*>Bag <span>)\d+(<\/span>)/,(_,a,b)=>a+featureCartCount()+b)
+    .replace('<div class="topbar">',`<div class="delivery-strip"><button data-feature="location" aria-label="Choose delivery location">⌖ &nbsp;${featureState.pincode?'Delivering to '+esc(featureState.pincode):'Check delivery location'} <span>⌄</span></button><span>Online catalogue preview · Orders confirmed on WhatsApp</span></div><div class="topbar">`)
+    .replace('<button class="cart-button"',`<a class="saved-header" href="#/saved" aria-label="Saved products">♡ <span>${count}</span></a><button class="cart-button"`)
+    .replace('</header>',`</header><nav class="flavour-nav" aria-label="Shop by flavour"><a href="#/shop">All flavours</a><a href="#/products/pahadi-mix-namak">Pahadi Mix</a><a href="#/products/bhang-pahadi-namak">Bhang Pahadi</a><a href="#/products/hara-pahadi-namak">Hara Pahadi</a><a href="#/shop" data-feature="offers-link">Offers & packs ↗</a></nav>`);
+}
+function heroControls(){
+  return `<div class="hero-controls" aria-label="Featured slides"><button data-feature="hero-prev" aria-label="Previous featured slide">‹</button><button class="${featureState.heroSlide===0?'current':''}" data-feature="hero-dot" data-value="0" aria-label="Show mountain slide" aria-pressed="${featureState.heroSlide===0}"></button><button class="${featureState.heroSlide===1?'current':''}" data-feature="hero-dot" data-value="1" aria-label="Show offer slide" aria-pressed="${featureState.heroSlide===1}"></button><button data-feature="hero-next" aria-label="Next featured slide">›</button></div>`;
+}
+function promoHero(){
+  const p=products[2]||products[0];
+  return `<section class="hero hero-promo"><div class="hero-visual">${mountainPhoto}<img class="hero-photo" src="${esc(asset(p.image))}" alt="${esc(p.name)} bottle"><div class="hero-grain"></div></div><div class="hero-content"><span class="eyebrow light">THREE FLAVOURS · TWO JAR STYLES</span><h1>Make every<br>meal a little <em>Pahadi.</em></h1><p>Explore the introductory offers from the Pahado catalogue, including single jars and collection packs.</p><div class="hero-buttons"><a class="button cream" href="#/shop">Shop the flavours ↗</a><a class="text-link light-link" href="#/shop" data-feature="offers-link">See offers <span>↗</span></a></div></div>${heroControls()}</section>`;
+}
+function flavourTiles(){
+  return `<section class="flavour-section section"><div class="section-head"><div><span class="eyebrow">SHOP BY FLAVOUR</span><h2>Find your kind of pahad.</h2></div><a class="text-link" href="#/shop">View all flavours <span>↗</span></a></div><div class="flavour-tiles">${products.map((p,i)=>`<a class="flavour-tile" href="#/products/${esc(p.slug)}"><img src="${esc(asset(p.image))}" alt="${esc(p.name)} bottle" loading="lazy"><div><span class="eyebrow">0${i+1} · PAHADI NAMAK</span><h3>${esc(p.name)}</h3><span>Explore flavour ↗</span></div></a>`).join('')}</div></section>`;
+}
+function dealHighlights(){
+  return `<section class="deal-highlights section"><div><span class="eyebrow">DON'T MISS OUT</span><h2>More ways to try Pahado.</h2><p>Introductory collection prices shown in the supplied catalogue.</p></div><a href="#/shop" data-feature="offers-link"><span>01 / SINGLE JAR</span><strong>Start at ₹170</strong><small>Normal glass jar · 100 g</small><b>Explore offer ↗</b></a><a href="#/shop" data-feature="offers-link"><span>02 / COLLECTION PACK</span><strong>Pick two or three</strong><small>Choose a jar style and your flavours</small><b>Explore packs ↗</b></a></section>`;
+}
+function featureHome(){
+  let markup=home();
+  markup=markup.replace(/<section class="hero">.*?<\/section>/s,match=>featureState.heroSlide===0?match.replace('</section>',heroControls()+'</section>'):promoHero());
+  markup=markup.replace('<section class="intro section">',flavourTiles()+'<section class="intro section">');
+  markup=markup.replace('<section class="featured section">',dealHighlights()+'<section class="featured section">');
+  return markup;
+}
+function featuredList(){
+  const q=featureState.search.trim().toLowerCase();
+  return products.filter(p=>(featureState.flavour==='all'||p.slug===featureState.flavour)&&(!q||[p.name,p.description,p.shortDescription].join(' ').toLowerCase().includes(q)));
+}
+function featureShop(){
+  const list=featuredList();
+  return `<main><section class="page-hero"><span class="eyebrow">THE COLLECTION</span><h1>Find your flavour.</h1><p>Three Pahadi blends, with two jar styles to explore.</p></section><section class="section shop-section"><div class="shop-intro-bar"><strong>${products.length} flavours</strong><span>Introductory prices shown for this demo · Confirm availability before ordering</span></div><div class="shop-tools"><div class="filters"><button class="filter ${featureState.flavour==='all'?'active':''}" data-feature="flavour" data-value="all">All flavours</button>${products.map(p=>`<button class="filter ${featureState.flavour===p.slug?'active':''}" data-feature="flavour" data-value="${esc(p.slug)}">${esc(p.name.replace(' Namak',''))}</button>`).join('')}</div><label class="search-label"><span>⌕</span><input id="feature-search" aria-label="Search products" type="search" placeholder="Search the collection" value="${esc(featureState.search)}"></label></div><div class="feature-results">${list.length?`<div class="product-grid">${list.map(productCard).join('')}</div>`:`<div class="empty-state"><h2>No matching flavour</h2><p>Try a different search or view all flavours.</p></div>`}</div></section>${offerSection()}</main>`;
+}
+function featureProductPage(slug){
+  const p=products.find(x=>x.slug===slug);
+  if(!p)return productPage(slug);
+  let markup=productPage(slug);
+  const variant=`<fieldset class="jar-options"><legend>Choose your jar</legend><label class="jar-option"><input type="radio" name="jar-style" value="cork" checked><span><strong>Cork glass jar</strong><small>100 g · ${money(jarPrice.cork)}</small></span></label><label class="jar-option"><input type="radio" name="jar-style" value="normal"><span><strong>Normal glass jar</strong><small>100 g · ${money(jarPrice.normal)}</small></span></label></fieldset><p class="variant-note">Photo shows the cork glass jar. Jar availability and current offer are confirmed by the team.</p>`;
+  markup=markup.replace('<div class="detail-actions">',variant+'<div class="detail-actions">');
+  markup=markup.replace('<button class="button dark" data-action="add"', '<button class="button dark" data-feature="add-variant"');
+  markup=markup.replace('<small>Front image preview</small>','<small>Supplied catalogue photograph · cork jar</small>');
+  return markup;
+}
+function savedPage(){
+  const saved=products.filter(p=>featureState.saved.includes(p.slug));
+  return `<main><section class="page-hero"><span class="eyebrow">YOUR FAVOURITES</span><h1>Saved for later.</h1><p>Keep track of the flavours you want to revisit on this device.</p></section><section class="section saved-section">${saved.length?`<div class="product-grid">${saved.map(productCard).join('')}</div>`:`<div class="empty-state"><h2>No saved flavours yet.</h2><p>Tap the heart on a product to add it here.</p><a class="button dark" href="#/shop">Explore the collection ↗</a></div>`}</section></main>`;
+}
+function newsletterSection(){
+  return `<section class="newsletter-section"><div><span class="eyebrow">STAY CLOSE TO THE HILLS</span><h2>Good flavour is worth sharing.</h2><p>Preview of a newsletter sign-up for offers and new Pahado flavours.</p></div><form id="newsletter-form"><label for="newsletter-email">Email address</label><div><input id="newsletter-email" type="email" required placeholder="you@example.com"><button type="submit">Join the list ↗</button></div><small>Demo only · no email is sent or saved.</small>${featureState.newsletterNote?`<p role="status">${esc(featureState.newsletterNote)}</p>`:''}</form></section>`;
+}
+function featureFooter(){return newsletterSection()+footer()+`<a class="floating-whatsapp" href="${wa('Hello Pahado by Shahji! I would like to know more about your Pahadi namak range.')}" target="_blank" rel="noopener" aria-label="Chat with Pahado on WhatsApp">✆ <span>Ask us</span></a>`}
+function featurePanel(){
+  if(featureState.panel!=='location')return '';
+  return `<div class="feature-scrim" data-feature="close-panel"></div><div class="location-panel" role="dialog" aria-modal="true" aria-label="Check delivery location"><button class="panel-close" data-feature="close-panel" aria-label="Close">×</button><span class="eyebrow">DELIVERY PREVIEW</span><h2>Where should we deliver?</h2><p>Enter a PIN code to preview the location step. The Pahado team confirms actual service and charges when you enquire.</p><form id="location-form"><label for="pin-input">Indian PIN code</label><div><input id="pin-input" name="pin" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required placeholder="Enter 6-digit PIN" value="${esc(featureState.pincode)}"><button type="submit">Check</button></div></form>${featureState.deliveryNote?`<p class="location-note" role="status">${esc(featureState.deliveryNote)}</p>`:''}</div>`;
+}
+function featureCart(){
+  const lines=featureCartLines();
+  const total=lines.reduce((sum,line)=>sum+jarPrice[line.jar]*line.qty,0);
+  const message='Hello Pahado by Shahji! I would like to enquire about:\n'+lines.map(line=>`• ${line.product.name} — ${jarName[line.jar]} (100 g) × ${line.qty}`).join('\n')+`\nEstimated catalogue total: ${money(total)}. Please confirm price, delivery and availability.`;
+  return `<div class="scrim" data-action="close-cart"></div><aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping bag"><div class="drawer-head"><h2>Your bag <span>(${featureCartCount()})</span></h2><button class="icon-button" data-action="close-cart" aria-label="Close bag">×</button></div>${lines.length?`<div class="cart-lines">${lines.map(line=>`<div class="cart-line"><div class="cart-thumb"><img src="${esc(asset(line.product.image))}" alt=""></div><div><strong>${esc(line.product.name)}</strong><small>${jarName[line.jar]} · 100 g</small><span>${money(jarPrice[line.jar])}</span><div class="qty-controls"><button data-feature="cart-dec" data-key="${esc(line.key)}" aria-label="Decrease ${esc(line.product.name)} quantity">−</button>${line.qty}<button data-feature="cart-inc" data-key="${esc(line.key)}" aria-label="Increase ${esc(line.product.name)} quantity">+</button></div></div></div>`).join('')}</div><div class="drawer-bottom"><div class="subtotal"><span>Estimated subtotal</span><strong>${money(total)}</strong></div><p>Delivery and final prices are confirmed directly by the Pahado team.</p><a class="button whatsapp" href="${wa(message)}" target="_blank" rel="noopener">Enquire on WhatsApp ↗</a></div>`:`<div class="cart-empty"><div>✦</div><h3>Your bag is waiting.</h3><p>Explore the collection and choose a flavour.</p><a class="button dark" href="#/shop" data-action="close-cart">Explore products</a></div>`}</aside>`;
+}
+document.addEventListener('click',e=>{
+  const el=e.target.closest('[data-feature]');
+  if(!el)return;
+  const action=el.dataset.feature;
+  if(action==='location'){featureState.panel='location';render()}
+  if(action==='close-panel'){featureState.panel=null;render()}
+  if(action==='save'){
+    const slug=el.dataset.id;
+    featureState.saved=featureState.saved.includes(slug)?featureState.saved.filter(x=>x!==slug):[...featureState.saved,slug];
+    try{localStorage.setItem('pahado-saved',JSON.stringify(featureState.saved))}catch{}
+    render();
+  }
+  if(action==='hero-next'||action==='hero-prev'||action==='hero-dot'){
+    featureState.heroSlide=action==='hero-dot'?Number(el.dataset.value):(featureState.heroSlide+1)%2;
+    render();
+  }
+  if(action==='flavour'){featureState.flavour=el.dataset.value;render()}
+  if(action==='add-variant'){
+    const slug=el.dataset.id;
+    const jar=document.querySelector('input[name="jar-style"]:checked')?.value||'cork';
+    const qty=Math.max(1,Math.min(99,Number(document.querySelector('#qty')?.value)||1));
+    const key=cartKey(slug,jar);
+    state.cart[key]=(Number(state.cart[key])||0)+qty;
+    persist();state.cartOpen=true;render();
+  }
+  if(action==='cart-inc'||action==='cart-dec'){
+    const key=el.dataset.key;
+    state.cart[key]=Math.max(0,(Number(state.cart[key])||0)+(action==='cart-inc'?1:-1));
+    if(!state.cart[key])delete state.cart[key];
+    persist();render();
+  }
+  if(action==='offers-link'){
+    e.preventDefault();
+    location.hash='#/shop';
+    setTimeout(()=>document.querySelector('#offers')?.scrollIntoView({behavior:'smooth'}),60);
+  }
+});
+document.addEventListener('input',e=>{
+  if(e.target.id==='feature-search'){
+    featureState.search=e.target.value;
+    const list=featuredList();
+    const results=document.querySelector('.feature-results');
+    if(results)results.innerHTML=list.length?`<div class="product-grid">${list.map(productCard).join('')}</div>`:`<div class="empty-state"><h2>No matching flavour</h2><p>Try another search or view all flavours.</p></div>`;
+  }
+});
+document.addEventListener('change',e=>{
+  if(e.target.name==='jar-style'){
+    const jar=e.target.value;
+    const p=products.find(x=>location.hash.endsWith('/'+x.slug));
+    const price=document.querySelector('.detail-copy .sale-price');
+    const compare=document.querySelector('.detail-copy .original-price del');
+    const size=document.querySelector('.detail-copy .size');
+    const link=document.querySelector('.detail-copy .whatsapp');
+    if(price)price.textContent=money(jarPrice[jar]);
+    if(compare)compare.textContent=money(jarCompare[jar]);
+    if(size)size.textContent='100 g · '+jarName[jar];
+    if(link&&p)link.href=wa('Hello Pahado by Shahji! I would like to enquire about '+p.name+' in the '+jarName[jar]+'.');
+  }
+});
+document.addEventListener('submit',e=>{
+  if(e.target.id==='location-form'){
+    e.preventDefault();
+    featureState.pincode=e.target.elements.pin.value;
+    featureState.deliveryNote='Preview only: please confirm delivery to '+featureState.pincode+' with the Pahado team on WhatsApp.';
+    render();
+  }
+  if(e.target.id==='newsletter-form'){
+    e.preventDefault();
+    featureState.newsletterNote='Thanks for trying the demo. Sign-up is not connected yet.';
+    render();
+  }
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&featureState.panel){featureState.panel=null;render()}});
+window.addEventListener('hashchange',()=>{featureState.panel=null});
 render();
 </script></body></html>
